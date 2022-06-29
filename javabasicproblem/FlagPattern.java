@@ -9,21 +9,16 @@ public class FlagPattern {
         int number1 = sc.nextInt();
         int number2 = number1 * 2;
 
-        for (int r = 1; r <= number2; r++) {
-            for (int c = 1; c <= number1 * 3; c++) {
-                if (c <= number1 && r <= number1) {
+        for (int row = 1; row <= number2; row++) {
+            for (int colum= 1; colum <= number1 * 3; colum++) {
+                if (colum <= number1 && row <= number1) {
                     System.out.print("*");
                 } else {
                     System.out.print("-");
                 }
 
             }
-//            if(r <= number1){
-//                System.out.print("*");
-//            }
-//            else{
-//                System.out.print("-");
-//            }
+
             System.out.println();
         }
 
